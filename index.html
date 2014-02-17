@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Justify Me</title>
+        <style type="text/css">
+            #grid {
+                width: 90%;
+                margin: 1em auto;
+                padding: 0;
+                list-style: none;
+                text-align: justify;
+            }
+
+            #grid li {
+                box-sizing: border-box;
+                background-color: orangered;
+                color: white;
+                display: inline-block;
+                width: 23%;
+                /*padding-top: 23%;*/
+                margin-bottom: 2.5%;
+                height: 200px;
+                text-align: center;
+                line-height: 200px;
+            }
+
+            #grid li.placeholder {
+                background-color: white;
+                border-bottom: 10px solid orangered;
+            }
+
+            #grid:after {
+                content: '';
+                display: inline-block;
+                width: 100%;
+                border-top: 10px dashed #333;
+            }
+
+            h1 {
+                margin: 0;
+                padding: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        <ul id="grid">
+            <li><h1>1</h1></li>
+            <li><h1>2</h1></li>
+            <li><h1>3</h1></li>
+            <li><h1>4</h1></li>
+            <li><h1>5</h1></li>
+            <li class="placeholder"><h1>6</h1></li>
+            <li class="placeholder"><h1>7</h1></li>
+            <li class="placeholder"><h1>8</h1></li>
+        </ul>
+    </body>
